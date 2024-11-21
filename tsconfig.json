@@ -1,0 +1,21 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "compilerOptions": {
+    "types": [
+      "vite/client",
+      "vite-plugin-svg-icons/client",
+    ]
+  },
+  "include": [
+    "auto-imports.d.ts"
+  ]
+}
+
