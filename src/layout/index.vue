@@ -14,8 +14,7 @@
     </div>
     <div class="layoutMain">
       <div style="height: 1000px">
-        主体
-        <router-view></router-view>
+        <Main></Main>
       </div>
 
     </div>
@@ -26,8 +25,8 @@
 <script setup lang="ts">
 import Logo from '@/layout/logo/index.vue'
 import Menu from '@/layout/menu/index.vue'
-import useUserStore from "../../src/store/modules/user.ts";
-let menuList = useUserStore().menuList
+import {menuList} from "../setting.ts";
+import Main from './main/index.vue'
 </script>
 
 <style scoped lang="scss">
@@ -45,8 +44,9 @@ let menuList = useUserStore().menuList
     .layoutAsideScrollbar {
       width: 100%;
       height: calc(100% - $layout_header_width);
+
       el-menu {
-       //无边框
+        //无边框
         border-right: none;
       }
     }

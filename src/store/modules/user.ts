@@ -29,7 +29,7 @@ const useUserStore = defineStore('User', {
                     {
                         name: '首页',
                         path: '/home',
-                        icon: 'el-icon-s-home',
+                        icon: 'HomeFilled',
                     },
                     {
                         name: '权限管理',

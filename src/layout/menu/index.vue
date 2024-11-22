@@ -9,10 +9,11 @@ export default {
 
 <template>
   <template v-for="(item,index) in menuList" :key="item.path">
-    <el-menu-item v-if="!item.menuList" :index="item.path">
-
+    <el-menu-item v-if="!item.menuList" :index="item.path" @click="()=>{ $router.push(item.path)}">
+      <el-icon>
+        <component :is="item.icon"></component>
+      </el-icon>
       <template #title>
-        <svg-icon :icon-class="item.icon"/>
         {{ item.name }}
       </template>
     </el-menu-item>
@@ -20,11 +21,13 @@ export default {
     <el-sub-menu v-else :index="item.path" :key="item.path">
 
       <template #title>
-        <svg-icon :icon-class="item.icon"/>
+        <el-icon>
+          <component :is="item.icon"></component>
+        </el-icon>
         {{ item.name }}
       </template>
       <!--递归-->
-        <Menu :menuList="item.menuList"></Menu>
+      <Menu :menuList="item.menuList"></Menu>
     </el-sub-menu>
   </template>
 

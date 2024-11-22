@@ -1,13 +1,14 @@
 <script setup lang="ts">
 
-import {setting} from "@/setting.js";
+import {setting} from "../../setting.ts";
+let logo = '../../../'+ setting.logo
+
 </script>
 
 <template>
   <div class="logo">
-    <img :src= setting.logo alt="">
+    <img :src= logo alt="">
     <p>{{ setting.title }}</p>
-
   </div>
 </template>
 
@@ -17,6 +18,8 @@ import {setting} from "@/setting.js";
   display: flex;
   align-items: center;
   height: $layout_header_width;
+  //下划线
+  border-bottom: 1px solid #eee;
 
   img {
     width: 40px;

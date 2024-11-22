@@ -31,7 +31,7 @@ export default defineConfig(({command}) => ({
         }),
         viteMockServe({
             mockPath: 'mock',
-            localEnabled: command === 'serve',
+            enable: command === 'serve',
         }),
     ],
     resolve: {

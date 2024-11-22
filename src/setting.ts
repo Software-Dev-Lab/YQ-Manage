@@ -8,3 +8,66 @@ export const setting = {
     title:"小学生管理系统",
     logo:"public/logo.svg",
 }
+
+export const menuList = [
+    {
+        name: '首页',
+        path: '/home',
+        icon: 'House',
+    },
+    {
+        name: '数据大屏',
+        path: '/screen',
+        icon: 'FullScreen',
+
+    },
+    {
+        name: '权限管理',
+        path: '/acl',
+        icon: 'Setting',
+        menuList: [
+            {
+                name: '用户管理',
+                path: '/acl/user',
+                icon: 'User',
+            },
+            {
+                name: '角色管理',
+                path: '/acl/role',
+                icon: 'UserFilled'
+            },
+            {
+                name: '菜单管理',
+                path: '/acl/permission',
+                icon: 'Grid',
+            }
+        ]
+    },
+    {
+        name: '商品管理',
+        path: '/product',
+        icon: 'ShoppingCart',
+        menuList: [
+            {
+                name: '品牌管理',
+                path: '/product/tradeMark',
+                icon: 'ShoppingBag',
+            },
+            {
+                name: '属性管理',
+                path: '/product/attr',
+                icon: 'HelpFilled',
+            },
+            {
+                name: 'SPU管理',
+                path: '/product/spu',
+                icon: 'CaretTop',
+            },
+            {
+                name: 'SKU管理',
+                path: '/product/sku',
+                icon: 'CaretBottom',
+            }
+        ]
+    }
+]

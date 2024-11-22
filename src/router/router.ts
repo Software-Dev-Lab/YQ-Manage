@@ -11,14 +11,73 @@ export const constantRoute = [
         path: '/',
         component: () => import('@/layout/index.vue'),
         name: 'layout',
+        redirect: '/home',
         children: [
             {
                 path: '/home',
                 component: () => import('@/views/home/index.vue'),
                 name: 'home',
             },
+            {
+                path: '/acl',
+                component: () => import('@/views/acl/index.vue'),
+                name: 'acl',
+                redirect: '/acl/user',
+                children: [
+                    {
+                        path: '/acl/user',
+                        component: () => import('@/views/acl/user/index.vue'),
+                        name: 'user',
+                    },
+                    {
+                        path: '/acl/role',
+                        component: () => import('@/views/acl/role/index.vue'),
+                        name: 'role',
+                    },
+                    {
+                        path: '/acl/permission',
+                        component: () => import('@/views/acl/permission/index.vue'),
+                        name: 'permission',
+                    }
+                ]
+            },
+            {
+                path: '/product',
+                component: () => import('@/views/product/index.vue'),
+                name: 'product',
+                redirect: '/product/trademark',
+                children: [
+                    {
+                        path: '/product/trademark',
+                        component: () => import('@/views/product/trademark/index.vue'),
+                        name: 'trademark',
+                    },
+                    {
+                        path: '/product/attr',
+                        component: () => import('@/views/product/attr/index.vue'),
+                        name: 'attr',
+                    },
+                    {
+                        path: '/product/spu',
+                        component: () => import('@/views/product/spu/index.vue'),
+                        name: 'spu',
+                    },
+                    {
+                        path: '/product/sku',
+                        component: () => import('@/views/product/sku/index.vue'),
+                        name: 'sku',
+                    }
+                ]
+            },
+
         ]
     },
+    {
+        path: '/screen',
+        component: () => import('@/views/screen/index.vue'),
+        name: 'screen',
+    },
+
     {
         path: '/404',
         component: () => import('@/views/404/index.vue'),
@@ -30,4 +89,5 @@ export const constantRoute = [
         redirect: '/404',
         name: 'Any',
     },
+
 ]
