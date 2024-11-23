@@ -1,18 +1,19 @@
 <template>
   <div class="layoutContainer">
-    <div class="layoutAside">
+    <div class="layoutAside" :class="{Collapse:collapse}">
       <Logo/>
-      <el-scrollbar class="layoutAsideScrollbar">
-        <el-menu>
+      <el-scrollbar class="layoutAsideScrollbar" >
+
+        <el-menu :collapse="collapse" :default-active="index">
           <Menu :menuList="menuList"></Menu>
         </el-menu>
 
       </el-scrollbar>
     </div>
-    <div class="layoutHeader">
-      头
+    <div class="layoutHeader" :class="{Collapse:collapse}">
+      <Tabbar  @toggle="handleToggle" ></Tabbar>
     </div>
-    <div class="layoutMain">
+    <div class="layoutMain" :class="{Collapse:collapse}">
       <div style="height: 1000px">
         <Main></Main>
       </div>
@@ -23,10 +24,22 @@
 </template>
 
 <script setup lang="ts">
+import {ref} from "vue";
+import {useRoute} from "vue-router";
+//得到当前路由地址
+const index = useRoute().path;
+
 import Logo from '@/layout/logo/index.vue'
 import Menu from '@/layout/menu/index.vue'
 import {menuList} from "../setting.ts";
 import Main from './main/index.vue'
+import Tabbar from '@/layout/tabbar/index.vue'
+const collapse = ref(false);
+const handleToggle = ()=>{
+  console.log(collapse)
+  collapse.value = !collapse.value;
+  //改变侧边栏宽度
+}
 </script>
 
 <style scoped lang="scss">
@@ -40,12 +53,16 @@ import Main from './main/index.vue'
     width: $layout_aside_width;
     background-color: white;
     color: black;
+    &.Collapse{
+      width: $layout_aside_collapse_width;
+      transition: all 0.3s ease;
+    }
 
     .layoutAsideScrollbar {
       width: 100%;
       height: calc(100% - $layout_header_width);
 
-      el-menu {
+      .el-menu {
         //无边框
         border-right: none;
       }
@@ -58,7 +75,14 @@ import Main from './main/index.vue'
     left: $layout_aside_width;
     width: calc(100% - $layout_aside_width);
     height: $layout_header_width;
-    background: red;
+    background: white;
+    color: black;
+    padding: 0 15px;
+    &.Collapse{
+      width: calc(100% - $layout_aside_collapse_width);
+      left: $layout_aside_collapse_width;
+      transition: all 0.3s ease;
+    }
   }
 
   .layoutMain {
@@ -70,6 +94,11 @@ import Main from './main/index.vue'
     height: calc(100% - $layout_header_width);
     background: green;
     overflow: auto;
+    &.Collapse{
+      width: calc(100% - $layout_aside_collapse_width);
+      left: $layout_aside_collapse_width;
+      transition: all 0.3s ease;
+    }
   }
 
 }

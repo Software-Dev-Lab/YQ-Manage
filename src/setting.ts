@@ -18,13 +18,13 @@ export const menuList = [
     {
         name: '数据大屏',
         path: '/screen',
-        icon: 'FullScreen',
+        icon: 'DataBoard',
 
     },
     {
         name: '权限管理',
         path: '/acl',
-        icon: 'Setting',
+        icon: 'SetUp',
         menuList: [
             {
                 name: '用户管理',

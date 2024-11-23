@@ -8,23 +8,24 @@ export default {
 </script>
 
 <template>
-  <template v-for="(item,index) in menuList" :key="item.path">
+  <template v-for="(item,index) in menuList" :key="item.path" >
     <el-menu-item v-if="!item.menuList" :index="item.path" @click="()=>{ $router.push(item.path)}">
       <el-icon>
         <component :is="item.icon"></component>
       </el-icon>
       <template #title>
-        {{ item.name }}
+        <span>{{ item.name }}</span>
       </template>
     </el-menu-item>
 
-    <el-sub-menu v-else :index="item.path" :key="item.path">
+    <el-sub-menu v-if="item.menuList" :index="item.path" >
 
       <template #title>
         <el-icon>
-          <component :is="item.icon"></component>
-        </el-icon>
-        {{ item.name }}
+        <component :is="item.icon"></component>
+      </el-icon>
+
+        <span>{{ item.name }}</span>
       </template>
       <!--递归-->
       <Menu :menuList="item.menuList"></Menu>
