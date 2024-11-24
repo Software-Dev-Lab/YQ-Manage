@@ -1,12 +1,25 @@
 <script setup lang="ts">
+import useSettingStore from "../../store/modules/setting.ts";
+import {nextTick, ref, watch} from "vue";
 
+const refresh = ref(true);
+watch(() => useSettingStore().refresh, () => {
+  refresh.value = !refresh.value;
+//   refresh然后又变为ture
+//   setTimeout(() => {
+//     refresh.value = !refresh.value;
+//   }, 100);
+  nextTick(()=> {
+    refresh.value = !refresh.value;
+  })
+})
 
 </script>
 
 <template>
   <router-view v-slot="{ Component }">
     <transition name="fade">
-      <component :is="Component"></component>
+      <component :is="Component" v-if="refresh"></component>
     </transition>
   </router-view>
 

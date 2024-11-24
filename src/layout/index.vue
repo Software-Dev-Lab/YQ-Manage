@@ -1,19 +1,20 @@
 <template>
   <div class="layoutContainer">
-    <div class="layoutAside" :class="{Collapse:collapse}">
+    <div class="layoutAside" :class="{Collapse:useSettingStore().collapse}">
       <Logo/>
-      <el-scrollbar class="layoutAsideScrollbar" >
+      <el-scrollbar class="layoutAsideScrollbar">
 
-        <el-menu :collapse="collapse" :default-active="index">
+        <el-menu :collapse="useSettingStore().collapse" :default-active="index">
           <Menu :menuList="menuList"></Menu>
         </el-menu>
 
       </el-scrollbar>
     </div>
-    <div class="layoutHeader" :class="{Collapse:collapse}">
-      <Tabbar  @toggle="handleToggle" ></Tabbar>
+    <div class="layoutHeader" :class="{Collapse:useSettingStore().collapse}">
+      <Tabbar @toggle="handleToggle"></Tabbar>
     </div>
-    <div class="layoutMain" :class="{Collapse:collapse}">
+
+    <div class="layoutMain" :class="{Collapse:useSettingStore().collapse}">
       <div style="height: 1000px">
         <Main></Main>
       </div>
@@ -24,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import {ref} from "vue";
+
 import {useRoute} from "vue-router";
 //得到当前路由地址
 const index = useRoute().path;
@@ -34,11 +35,12 @@ import Menu from '@/layout/menu/index.vue'
 import {menuList} from "../setting.ts";
 import Main from './main/index.vue'
 import Tabbar from '@/layout/tabbar/index.vue'
-const collapse = ref(false);
-const handleToggle = ()=>{
-  console.log(collapse)
-  collapse.value = !collapse.value;
-  //改变侧边栏宽度
+import useSettingStore from "../store/modules/setting";
+
+
+const handleToggle = () => {
+  //设置属性相反
+  useSettingStore().collapse = !useSettingStore().collapse
 }
 </script>
 
@@ -53,7 +55,8 @@ const handleToggle = ()=>{
     width: $layout_aside_width;
     background-color: white;
     color: black;
-    &.Collapse{
+
+    &.Collapse {
       width: $layout_aside_collapse_width;
       transition: all 0.3s ease;
     }
@@ -78,7 +81,8 @@ const handleToggle = ()=>{
     background: white;
     color: black;
     padding: 0 15px;
-    &.Collapse{
+
+    &.Collapse {
       width: calc(100% - $layout_aside_collapse_width);
       left: $layout_aside_collapse_width;
       transition: all 0.3s ease;
@@ -94,7 +98,8 @@ const handleToggle = ()=>{
     height: calc(100% - $layout_header_width);
     background: green;
     overflow: auto;
-    &.Collapse{
+
+    &.Collapse {
       width: calc(100% - $layout_aside_collapse_width);
       left: $layout_aside_collapse_width;
       transition: all 0.3s ease;

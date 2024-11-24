@@ -1,9 +1,24 @@
 <script setup lang="ts">
 import {ArrowRight, Switch} from "@element-plus/icons-vue";
 import {useRouter} from "vue-router";
+import useSettingStore from "../../store/modules/setting.ts";
 
 const emit = defineEmits(["toggle"])
 const $router = useRouter();
+
+//实现刷新
+const Refresh = () => {
+  useSettingStore().refresh = !useSettingStore().refresh
+}
+// 实现全屏打开和关闭
+const fullScreen = () => {
+  const element = document.fullscreenElement;
+  if (element == null) {
+    document.documentElement.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
+}
 </script>
 
 <template>
@@ -20,7 +35,8 @@ const $router = useRouter();
     </div>
     <div class="tabbar-right">
 
-      <el-button icon="FullScreen" circle></el-button>
+      <el-button icon="Refresh" circle @click="Refresh"></el-button>
+      <el-button icon="FullScreen" circle @click="fullScreen"></el-button>
       <el-button icon="StarFilled" circle></el-button>
       <el-button icon="Setting" circle></el-button>
       <!--      左右隔一点-->
