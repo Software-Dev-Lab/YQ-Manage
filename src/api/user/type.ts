@@ -15,7 +15,7 @@ interface dataType {
 }
 
 export interface userInfoReponseData {
-    id: number;
+    code: number;
     data: user;
 
 }

@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import {ArrowRight, Switch} from "@element-plus/icons-vue";
-import {useRouter} from "vue-router";
+import {useRoute, useRouter} from "vue-router";
 import useSettingStore from "../../store/modules/setting.ts";
+import useUserStore from "../../store/modules/user.ts";
 
 const emit = defineEmits(["toggle"])
 const $router = useRouter();
+const $route = useRoute();
 
 //实现刷新
 const Refresh = () => {
@@ -18,6 +20,14 @@ const fullScreen = () => {
   } else {
     document.exitFullscreen();
   }
+}
+//退出登陆点击的回调
+const logout = () => {
+  //第一件事：需要项服务器发请求【退出登录接口】（我们这里没有）
+  //第二件事：仓库当中和关于用户的相关的数据清空
+  useUserStore().userLogout()
+  //第三件事：跳转到登陆页面
+  $router.push({ path: '/login', query: { redirect: $route.path } })
 }
 </script>
 
@@ -40,18 +50,18 @@ const fullScreen = () => {
       <el-button icon="StarFilled" circle></el-button>
       <el-button icon="Setting" circle></el-button>
       <!--      左右隔一点-->
-      <img src="../../../public/logo.svg" style="width: 24px; height: 24px; margin:0px 10px">
+      <img :src="useUserStore().avatar" style="width: 24px; height: 24px; margin:0px 10px">
 
       <el-dropdown>
         <span class="el-dropdown-link">
-              Admin
+              {{useUserStore().username}}
           <el-icon class="el-icon--right">
             <arrow-down/>
           </el-icon>
         </span>
         <template #dropdown>
           <el-dropdown-menu>
-            <el-dropdown-item @click="$router.push('/login')">退出登录</el-dropdown-item>
+            <el-dropdown-item @click="logout">退出登录</el-dropdown-item>
           </el-dropdown-menu>
         </template>
       </el-dropdown>

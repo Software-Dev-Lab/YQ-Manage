@@ -3,7 +3,7 @@ import {defineStore} from 'pinia'
 
 import type {loginFormData, loginResponseData} from "../../api/user/type.ts";
 import {getToken, setToken} from "../../utils/token.ts";
-import {reqLogin} from "../../api/user/index.ts";
+import {reqLogin, reqUserInfo} from "../../api/user/index.ts";
 import {type menuListType} from "../../api/user/type.ts";
 
 //创建用户小仓库
@@ -14,6 +14,8 @@ const useUserStore = defineStore('User', {
             //用户信息
             token: getToken(),
             menuList: [] as menuListType[],
+            username: '',
+            avatar: ''
         }
     },
     //处理异步|逻辑地方
@@ -76,6 +78,23 @@ const useUserStore = defineStore('User', {
             //2.登录请求
             //3.将token保存到仓库中
         },
+        //获取用户信息方法
+        async userInfo() {
+            //获取用户信息进行存储
+            let result = await reqUserInfo()
+            if (result.code == 200) {
+                this.username = result.data.checkUser.username
+                this.avatar = result.data.checkUser.avatar
+            } else return Promise.reject(new Error("获取用户信息失败"))
+        },
+        //退出登录
+        async userLogout() {
+            // await reqLogout()
+            this.token = ''
+            setToken('')
+            this.username = ''
+            this.avatar = ''
+        }
     },
     getters: {},
 })

@@ -19,8 +19,10 @@ enum API {
     LOGIN_URL1 = '/user/login',
 
     USERINFO_URL = '/admin/acl/index/info',
+    USERINFO_URL1 = '/user/info',
 
     LOGOUT_URL = '/admin/acl/index/logout',
+
 
 }
 //登录接口
@@ -29,7 +31,7 @@ export const reqLogin = (data: loginFormData) =>
 
 //获取用户信息
 export const reqUserInfo = () =>
-    request.get<any, userInfoReponseData>(API.USERINFO_URL)
+    request.get<any, userInfoReponseData>(API.USERINFO_URL1)
 
 //退出登录
 

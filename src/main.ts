@@ -7,7 +7,8 @@ import 'virtual:svg-icons-register';
 import router from "./router/index.ts";
 import gloablComponent from './components/index';
 import ElementPlus from 'element-plus'
-import pinia from "./store/index.ts";
+import pinia from "./store/index.ts"
+import './permisstion'
 // import 'element-plus/dist/index.css'
 const app = createApp(App)
 app.use(ElementPlus, {

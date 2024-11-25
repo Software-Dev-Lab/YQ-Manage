@@ -1,5 +1,6 @@
 import axios from "axios";
 import {ElMessage} from "element-plus";
+import useUserStore from "../store/modules/user.ts";
 //创建axios实例
 let request = axios.create({
     baseURL: '/api',
@@ -7,8 +8,14 @@ let request = axios.create({
 })
 //请求拦截器
 request.interceptors.request.use(config => {
-
-    return config;
+    //获取用户相关的小仓库，获取token，登录成功以后携带个i服务器
+    const userStore = useUserStore()
+    if (userStore.token) {
+        config.headers.token = userStore.token
+    }
+    //config配置对象，headers请求头，经常给服务器端携带公共参数
+    //返回配置对象
+    return config
 });
 
 //响应拦截器
