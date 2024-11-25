@@ -14,6 +14,7 @@ app.use(ElementPlus, {
     locale: zhCn,
 })
 
+
 app.use(pinia)
 app.use(router)
 app.use(gloablComponent);
