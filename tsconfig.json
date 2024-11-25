@@ -11,10 +11,12 @@
   "compilerOptions": {
     "types": [
       "vite/client",
-      "vite-plugin-svg-icons/client",
+      "vite-plugin-svg-icons/client"
     ],
+    "baseUrl": "./",
+    // 解析非相对模块的基地址，默认是当前目录
     "paths": {
-      "baseUrl": "./", // 解析非相对模块的基地址，默认是当前目录
+      //路径映射，相对于baseUrl
       "@/*": [
         "src/*"
       ]

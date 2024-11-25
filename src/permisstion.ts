@@ -16,6 +16,9 @@ const userStore = useUserStore(pinia)
 
 //全局前置守卫
 router.beforeEach(async (to: any, from: any, next: any) => {
+    to.path
+    from.path
+
     //网页的名字
     document.title = `${setting.title}-${to.name}`
     //访问某一个路由之前的守卫
@@ -62,6 +65,8 @@ router.beforeEach(async (to: any, from: any, next: any) => {
 
 //全局后置守卫
 router.afterEach((to: any, from: any) => {
+    to.path
+    from.path
     // to and from are both route objects.
     // console.log(to.path, from.path)
     nprogress.done()
