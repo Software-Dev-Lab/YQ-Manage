@@ -5,10 +5,6 @@ import {nextTick, ref, watch} from "vue";
 const refresh = ref(true);
 watch(() => useSettingStore().refresh, () => {
   refresh.value = !refresh.value;
-//   refresh然后又变为ture
-//   setTimeout(() => {
-//     refresh.value = !refresh.value;
-//   }, 100);
   nextTick(()=> {
     refresh.value = !refresh.value;
   })

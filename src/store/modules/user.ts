@@ -2,7 +2,7 @@
 import {defineStore} from 'pinia'
 import {getToken, removeToken, setToken} from "../../utils/token.ts";
 import {reqLogin, reqLogout, reqUserInfo} from "../../api/user/index.ts";
-import {type menuListType} from "../../api/user/type.ts";
+import {loginFormData, loginResponseData, type menuListType, userInfoResponseData} from "../../api/user/type.ts";
 
 //创建用户小仓库
 const useUserStore = defineStore('User', {
@@ -20,9 +20,9 @@ const useUserStore = defineStore('User', {
     },
     //处理异步|逻辑地方
     actions: {
-        async userLogin(data: any) {
+        async userLogin(data: loginFormData) {
             //登录请求
-            const result: any = await reqLogin(data)
+            const result: loginResponseData = await reqLogin(data)
 
             if (result.code == 200) {
                 this.menuList = [
@@ -80,7 +80,7 @@ const useUserStore = defineStore('User', {
         //获取用户信息方法
         async userInfo() {
             //获取用户信息进行存储
-            const result = await reqUserInfo()
+            const result: userInfoResponseData = await reqUserInfo()
             console.log(result)
 
             if (result.code == 200) {

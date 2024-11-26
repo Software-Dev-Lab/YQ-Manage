@@ -15,7 +15,7 @@
     </div>
 
     <div class="layoutMain" :class="{Collapse:useSettingStore().collapse}">
-      <div style="height: 1000px">
+      <div style="height: 100%">
         <Main></Main>
       </div>
 
@@ -96,8 +96,9 @@ const handleToggle = () => {
     left: $layout_aside_width;
     width: calc(100% - $layout_aside_width);
     height: calc(100% - $layout_header_width);
-    background: green;
     overflow: auto;
+    //有线围起来
+    box-shadow: 0 0 1px #ccc;
 
     &.Collapse {
       width: calc(100% - $layout_aside_collapse_width);

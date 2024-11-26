@@ -23,8 +23,8 @@ const fullScreen = () => {
 }
 //退出登陆点击的回调
 const logout = async () => {
-  await useUserStore().userLogout()
-  await $router.push({path: '/login'})
+  await useUserStore().userLogout();
+  $router.push({path: '/login', query: {redirect: $route.path}});
 }
 </script>
 
