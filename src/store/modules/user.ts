@@ -1,9 +1,7 @@
 //创建用户相关的小仓库
 import {defineStore} from 'pinia'
-
-import type {loginFormData, loginResponseData} from "../../api/user/type.ts";
-import {getToken, setToken} from "../../utils/token.ts";
-import {reqLogin, reqUserInfo} from "../../api/user/index.ts";
+import {getToken, removeToken, setToken} from "../../utils/token.ts";
+import {reqLogin, reqLogout, reqUserInfo} from "../../api/user/index.ts";
 import {type menuListType} from "../../api/user/type.ts";
 
 //创建用户小仓库
@@ -16,17 +14,17 @@ const useUserStore = defineStore('User', {
             menuList: [] as menuListType[],
             username: '',
             avatar: ''
+
+
         }
     },
     //处理异步|逻辑地方
     actions: {
-        // 用户登录的方法
-        async userLogin(data: loginFormData) {
-            const res: loginResponseData = await reqLogin(data)
-            // 登录成功返回token
-            if (res.code == 200) {
-                this.token = <string>res.data.token
-                setToken(<string>res.data.token)
+        async userLogin(data: any) {
+            //登录请求
+            const result: any = await reqLogin(data)
+
+            if (result.code == 200) {
                 this.menuList = [
                     {
                         name: '首页',
@@ -68,33 +66,46 @@ const useUserStore = defineStore('User', {
                         ]
                     }
                 ]
-                return "ok"
+                //pinia仓库存储token
+                //由于pinia|vuex存储数据其实利用js对象
+                this.token = result.data as string
+                //本地存储持久化存储一份
+                setToken(result.data as string)
+                //保证当前async函数返回一个成功的promise函数
+                return 'ok'
             } else {
-                return Promise.reject(new Error(res.data.message))
+                return Promise.reject(new Error(result.data))
             }
-
-
-            //1.需要用户登录携带参数（登录请求需要参数）
-            //2.登录请求
-            //3.将token保存到仓库中
         },
         //获取用户信息方法
         async userInfo() {
             //获取用户信息进行存储
-            let result = await reqUserInfo()
+            const result = await reqUserInfo()
+            console.log(result)
+
             if (result.code == 200) {
-                this.username = result.data.checkUser.username
-                this.avatar = result.data.checkUser.avatar
-            } else return Promise.reject(new Error("获取用户信息失败"))
+                this.username = result.data.name
+                this.avatar = result.data.avatar
+                return 'ok'
+            } else {
+                return Promise.reject(new Error(result.message))
+            }
         },
         //退出登录
         async userLogout() {
-            // await reqLogout()
-            this.token = ''
-            setToken('')
-            this.username = ''
-            this.avatar = ''
-        }
+            const result = await reqLogout()
+            if (result.code == 200) {
+                //本地数据清空
+                this.token = ''
+                this.username = ''
+                this.avatar = ''
+                removeToken()
+                return 'ok'
+            } else {
+                return Promise.reject(new Error(result.message))
+            }
+
+        },
     },
     getters: {},
 })

@@ -3,7 +3,7 @@ import {ElMessage} from "element-plus";
 import useUserStore from "../store/modules/user.ts";
 //创建axios实例
 let request = axios.create({
-    baseURL: '/api',
+    baseURL: import.meta.env.VITE_APP_BASE_API,
     timeout: 5000
 })
 //请求拦截器

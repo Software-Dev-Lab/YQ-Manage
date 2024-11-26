@@ -47,8 +47,9 @@ router.beforeEach(async (to: any, from: any, next: any) => {
                 } catch (error) {
                     //token过期|用户手动处理token
                     //退出登陆->用户相关的数据清空
-                    await userStore.userLogout()
                     next({path: '/login', query: {redirect: to.path}})
+                    await userStore.userLogout()
+
                 }
             }
         }

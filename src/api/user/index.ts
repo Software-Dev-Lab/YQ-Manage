@@ -1,38 +1,25 @@
-//统一管理咱们项目用户相关的接口
-import request from '../../utils/request'
-
-import type {
-
-    loginFormData,
-
-    loginResponseData,
-
-    userInfoReponseData,
-
-} from './type'
+//统一管理项目用户相关的接口
 
 //项目用户相关的请求地址
+import request from "../../utils/request.ts";
 
 enum API {
-
     LOGIN_URL = '/admin/acl/index/login',
-    LOGIN_URL1 = '/user/login',
-
     USERINFO_URL = '/admin/acl/index/info',
-    USERINFO_URL1 = '/user/info',
-
     LOGOUT_URL = '/admin/acl/index/logout',
-
-
 }
-//登录接口
-export const reqLogin = (data: loginFormData) =>
-    request.post<any,loginResponseData>(API.LOGIN_URL1, data)
+//对外暴露请求函数
+//登录接口方法
+export const reqLogin = (data: any) => {
+    return request.post<any, any>(API.LOGIN_URL, data)
+}
 
-//获取用户信息
-export const reqUserInfo = () =>
-    request.get<any, userInfoReponseData>(API.USERINFO_URL1)
+//获取用户信息接口方法
+export const reqUserInfo = () => {
+    return request.get<any, any>(API.USERINFO_URL)
+}
 
 //退出登录
-
-export const reqLogout = () => request.post<any, any>(API.LOGOUT_URL)
+export const reqLogout = () => {
+    return request.post<any, any>(API.LOGOUT_URL)
+}
