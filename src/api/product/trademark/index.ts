@@ -10,9 +10,8 @@ enum API {
     UPDATETRADEMARK_URL = '/admin/product/baseTrademark/update',
 }
 
-export const reqTradeMarkList = (page: number, limit: number) => {
-    return request.get<any, TradeMarkResponseData>(API.TRADEMARK_URL + `${page}/${limit}`)
-}
+export const reqTradeMarkList = (page: number, limit: number) =>
+    request.get<any, TradeMarkResponseData>(API.TRADEMARK_URL + `${page}/${limit}`)
 
 export const addOrUpdateTrademark = (data: any) => {
     //判断是否有id

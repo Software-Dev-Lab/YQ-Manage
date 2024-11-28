@@ -13,7 +13,6 @@ const app = createApp(App)
 app.use(ElementPlus, {
     locale: zhCn,
 })
-console.log(import.meta.env)
 app.use(pinia)
 app.use(router)
 app.use(gloablComponent);

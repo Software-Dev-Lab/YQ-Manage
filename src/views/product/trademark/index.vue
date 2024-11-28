@@ -2,15 +2,17 @@
   <el-card class="box-card">
     <div class="content">
       <!--添加品牌-->
-      <el-button type="primary" @click="addBrand" style="margin-bottom: 10px"> + 添加品牌</el-button>
+      <el-button @click="addBrand"></el-button>
+      <el-button plain @click="dialogFormVisible = true" style="margin-bottom: 10px" type="primary">+ 添加品牌
+      </el-button>
       <!--品牌列表-->
       <el-table :data="TradeMarkList" style="width: 100%" border>
-        <el-table-column label="序号" prop="id" type="index" width="80" align="center"/>
+        <el-table-column label="序号" prop="id" width="80" align="center" type="index"/>
         <el-table-column label="品牌名称" prop="tmName"/>
         <el-table-column label="品牌logo">
           <!--插槽图片-->
           <template #default="scope">
-            <img :src="scope.row.logoUrl" alt="品牌logo" style="width: 100px; height: auto;">
+            <img :src="scope.row.logoUrl" alt="未有图片" style="width: 100px; height: auto; border-radius: 15px;">
           </template>
         </el-table-column>
 
@@ -37,12 +39,13 @@
       </el-table>
 
       <div class="pagination">
+        <!--            v-model:page-size="pageSize"-->
         <el-pagination
-            v-model:current-page="currentPage"
-            v-model:page-size="pageSize"
+            :current-page="currentPage"
+            :page-size="pageSize"
             :size="size"
             :background="true"
-            layout=" prev, pager, next, jumper,sizes,total"
+            layout=" prev, pager, next, jumper,->,sizes,total"
             :page-sizes="[10, 20, 50, 100]"
             :total="total"
             @size-change="handleSizeChange"
@@ -68,21 +71,19 @@ onMounted(() => {
 let TradeMarkList = ref<TradeMark[]>([])
 let total = ref(0)
 const getTradeMarkList = async (page: number, limit: number) => {
-  try {
-    let result = await reqTradeMarkList(page, limit)
-    if (result.code === 200) {
-      TradeMarkList.value = result.data.records
-      total.value = result.data.total
-    }
-  } catch (e) {
 
+  let result = await reqTradeMarkList(page, limit)
+  if (result.code === 200) {
+    TradeMarkList.value = result.data.records
+    total.value = result.data.total
   }
 
 }
 
+const dialogFormVisible = ref(false)
 
 const addBrand = () => {
-  alert('添加品牌')
+  console.log('添加品牌')
 }
 
 
@@ -102,10 +103,17 @@ const size = ref<ComponentSize>('default')
 
 
 const handleSizeChange = (val: number) => {
-  pageSize.value = val
-  getTradeMarkList(currentPage.value, val)
-//   console.log(`每页 ${val} 条`)
+  if (val <= 0) return; // 避免除零错误
+  // console.log(total.value + " 总数");
+  // console.log(val + " 每页");
+  console.log('之前当前页 ' + currentPage.value);
+  // 计算当前页，确保不为负数
+  currentPage.value = Math.max(1, Math.ceil((currentPage.value - 1) * pageSize.value / val) + 1);
+  // console.log('当前页 ' + currentPage.value);
+  pageSize.value = val;
+  getTradeMarkList(currentPage.value, val);
 }
+
 const handleCurrentChange = (val: number) => {
   currentPage.value = val
   getTradeMarkList(val, pageSize.value)
@@ -120,9 +128,6 @@ const handleCurrentChange = (val: number) => {
   min-height: 100%;
 
   .pagination {
-    ////设置为页面最下面
-    //position: absolute;
-    //bottom: 50px;
     margin-top: 10px;
   }
 }
