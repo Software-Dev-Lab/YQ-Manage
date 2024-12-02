@@ -152,6 +152,7 @@ export default defineConfig(({command}) => {
                 // 指定symbolId格式
                 symbolId: "icon-[dir]-[name]"
             }),
+            // mock
             viteMockServe({
                 mockPath: 'mock',
                 enable: command === 'serve',
@@ -169,6 +170,17 @@ export default defineConfig(({command}) => {
                     additionalData: `@import "@/styles/variables.scss";`
                 }
             }
+        },
+        server: {
+            proxy: {
+                "/api/admin/product/fileUpload": { // 更新代理规则以匹配新的路径
+                    target: "http://sph-api.atguigu.cn", // 目标后端服务
+                    changeOrigin: true,
+                    rewrite: (path) => path.replace(/^\/api/, ''),
+                },
+            }
+
+
         }
 
     });

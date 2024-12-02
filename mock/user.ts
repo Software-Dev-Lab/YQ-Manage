@@ -27,562 +27,562 @@ function createUserList() {
 }
 
 //品牌信息数据
-function createBrandList() {
-    return [
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 1,
-            tmName: '华为',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 2,
-            tmName: '苹果',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 3,
-            tmName: '小米',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 4,
-            tmName: 'OPPO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-        {
-            id: 5,
-            tmName: 'VIVO',
-            logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
-        },
-
-    ]
-
-}
+// function createBrandList() {
+//     return [
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 1,
+//             tmName: '华为',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 2,
+//             tmName: '苹果',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 3,
+//             tmName: '小米',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 4,
+//             tmName: 'OPPO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//         {
+//             id: 5,
+//             tmName: 'VIVO',
+//             logoUrl: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202009%2F09%2F20200909171809_qxhjm.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f'
+//         },
+//
+//     ]
+//
+// }
 
 export default [
     // 用户登录接口
@@ -638,31 +638,32 @@ export default [
             return {code: 200, data: {message: '退出成功'}}
         },
     },
-    //获取品牌列表
-    {
-        url: '/api/admin/product/baseTrademark/:page/:limit',
-        method: 'get',
-        response: (req) => {
-            const match = req.url.match(/baseTrademark\/(\d+)\/(\d+)/); // 提取 page 和 limit
-            const page = match ? parseInt(match[1], 10) : 1;
-            const limit = match ? parseInt(match[2], 10) : 10;
 
-            const brandList = createBrandList();
-
-
-            const startIndex = (page - 1) * limit;
-            const endIndex = startIndex + limit;
-            const pageList = brandList.slice(startIndex, endIndex);
-
-            return {
-                code: 200,
-                data: {
-                    records: pageList,
-                    total: brandList.length,
-                },
-            };
-        },
-    },
+    // //获取品牌列表
+    // {
+    //     url: '/api/admin/product/baseTrademark/:page/:limit',
+    //     method: 'get',
+    //     response: (req) => {
+    //         const match = req.url.match(/baseTrademark\/(\d+)\/(\d+)/); // 提取 page 和 limit
+    //         const page = match ? parseInt(match[1], 10) : 1;
+    //         const limit = match ? parseInt(match[2], 10) : 10;
+    //
+    //         const brandList = createBrandList();
+    //
+    //
+    //         const startIndex = (page - 1) * limit;
+    //         const endIndex = startIndex + limit;
+    //         const pageList = brandList.slice(startIndex, endIndex);
+    //
+    //         return {
+    //             code: 200,
+    //             data: {
+    //                 records: pageList,
+    //                 total: brandList.length,
+    //             },
+    //         };
+    //     },
+    // },
 
 
     //test

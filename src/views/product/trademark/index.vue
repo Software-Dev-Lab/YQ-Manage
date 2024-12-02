@@ -7,26 +7,27 @@
       </el-button>
 
       <el-dialog v-model="dialogFormVisible" title="添加品牌" width="700px">
-        <el-form style="width: 500px">
+        <el-form>
           <el-form-item prop="tmName" style="margin: 10px 0">
-            <el-form-item label="品牌名称">
-              <el-input v-model="loginFormData.tmName" placeholder="请输入品牌名称"></el-input>
+            <el-form-item label="品牌名称" label-width="80px">
+              <el-input v-model="trademarkParms.tmName" placeholder="请输入品牌名称" style="width: 300px"></el-input>
             </el-form-item>
           </el-form-item>
-          <el-form-item label="品牌LOGO" prop="logoUrl">
+          <el-form-item label="品牌LOGO" prop="logoUrl" label-width="80px">
             <el-upload
                 class="avatar-uploader"
-                action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
+                action="/api1/admin/product/fileUpload"
                 :show-file-list="false"
-                :on-success="handleAvatarSuccess"
                 :before-upload="beforeAvatarUpload"
+                :on-success="handleAvatarSuccess"
+                :on-error="handleAvatarError"
+                drag="true"
             >
-              <img v-if="loginFormData.logoUrl" :src="loginFormData.logoUrl" class="avatar"/>
+              <img v-if="trademarkParms.logoUrl" :src="trademarkParms.logoUrl" class="avatar"/>
               <el-icon v-else class="avatar-uploader-icon">
                 <Plus/>
               </el-icon>
             </el-upload>
-
           </el-form-item>
         </el-form>
         <template #footer>
@@ -94,22 +95,22 @@
 <script setup lang="ts">
 import {onMounted, ref} from 'vue'
 import type {ComponentSize} from 'element-plus'
-import {reqTradeMarkList} from "../../../api/product/trademark/index.ts";
+import {addOrUpdateTrademark, reqTradeMarkList} from "../../../api/product/trademark/index.ts";
 import {TradeMark} from "../../../api/product/trademark/type.ts"
 import {ElMessage} from 'element-plus'
 import {Plus} from '@element-plus/icons-vue'
-
 import type {UploadProps} from 'element-plus'
 
-const imageUrl = ref('')
 
-const handleAvatarSuccess: UploadProps['onSuccess'] = (
-    response,
-    uploadFile
-) => {
-  imageUrl.value = URL.createObjectURL(uploadFile.raw!)
+// 上传图片成功
+const handleAvatarSuccess: UploadProps['onSuccess'] = (response, uploadFile) => {
+  trademarkParms.value.logoUrl = response.data.logoUrl
 }
-
+const handleAvatarError: UploadProps['onError'] = (err, uploadFile) => {
+  console.log(err)
+  ElMessage.error('Upload failed')
+}
+// 上传图片之前的钩子
 const beforeAvatarUpload: UploadProps['beforeUpload'] = (rawFile) => {
   if (rawFile.type !== 'image/jpeg') {
     ElMessage.error('Avatar picture must be JPG format!')
@@ -140,14 +141,17 @@ const getTradeMarkList = async (page: number, limit: number) => {
 
 const dialogFormVisible = ref(false)
 
-const loginFormData = ref({
+const trademarkParms = ref<TradeMark>({
   tmName: '',
   logoUrl: ''
 })
-const addBrand = () => {
+const addBrand = async () => {
   dialogFormVisible.value = false
-  console.log('添加品牌')
-
+  await addOrUpdateTrademark(trademarkParms.value)
+  trademarkParms.value = {
+    tmName: '',
+    logoUrl: ''
+  }
 }
 
 
@@ -155,7 +159,7 @@ const search = ref('')
 
 const handleEdit = (index: number, row: TradeMark) => {
   dialogFormVisible.value = true
-  loginFormData.value = row
+  trademarkParms.value = row
   console.log(index, row)
 }
 const handleDelete = (index: number, row: TradeMark) => {
@@ -196,16 +200,15 @@ const handleCurrentChange = (val: number) => {
     margin-top: 10px;
   }
 }
-.avatar-uploader{
-  //背景 淡灰色
-  background: rgba(255, 255, 255, 0.1);
-}
+
 .avatar-uploader .avatar {
   width: 178px;
   height: 178px;
   display: block;
 }
+</style>
 
+<style>
 .avatar-uploader .el-upload {
   border: 1px dashed var(--el-border-color);
   border-radius: 6px;
@@ -226,4 +229,5 @@ const handleCurrentChange = (val: number) => {
   height: 178px;
   text-align: center;
 }
+
 </style>
